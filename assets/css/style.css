@@ -44,6 +44,27 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -307,7 +328,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #3498db;
+  color: var(--secondary-color);
 }
 
 .nav-menu .drop-down > a:after {
@@ -353,10 +374,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
-  max-width: 20px;
   right: 15px;
-  left: 4px;
-  top: 23px;
+  top: 18px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -483,16 +502,16 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 70vh;
-  margin-top: 70px;
+  margin-top: 15px;
 }
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 68px;
   font-weight: 700;
-  line-height: 56px;
-  color: black;
+  font-family: "Oswald";
+  line-height: 86px;
+  color: #ffffff;
 }
 
 #hero h2 {
@@ -531,7 +550,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 991px) {
   #hero {
-    height: 100vh;
+    height: 77vh;
   }
   #hero .animated {
     -webkit-animation: none;
@@ -550,8 +569,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
   }
   #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 68px;
+    line-height: 76px;
   }
   #hero h2 {
     font-size: 18px;
@@ -896,6 +915,46 @@ section {
 /*--------------------------------------------------------------
 # More Services
 --------------------------------------------------------------*/
+.callout {
+  background-color: #fff;
+   border: 1px solid #e4e7ea;
+    border-left: 4px solid #c8ced3;
+    border-radius: .25rem;
+  margin: 1rem 3rem;
+      padding: .75rem 1.25rem;
+  position: relative;
+  transition: 0.3s;
+  transition: ease-in-out 0.4s;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.callout h4 {
+      font-size: 1.3125rem;
+  margin-top: 0;
+   margin-bottom: .8rem
+}
+.callout p:last-child {
+  margin-bottom: 0;
+}
+
+.callout-info {
+  background: rgb(4,45,125);
+  background: linear-gradient(156deg, rgba(4,45,125,0.6) 0%, rgba(7,93,89,0.6) 55%, rgba(0,255,102,0.6) 100%);
+  /* background-color: #d2eef7; */
+  border-color: #b8daff;
+  border-left-color: var(--secondary-color);
+}
+.callout-info h4 {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.callout-info p {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
 .more-services {
   padding-top: 20px;
 }
