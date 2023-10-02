@@ -10,7 +10,7 @@
 @import "../css/icons/tabler-icons/tabler-icons.css";
 :root,
 [data-bs-theme="light"] {
-  --bs-blue: #5d87ff;
+  --bs-blue: #093862;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -33,7 +33,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #5d87ff;
+  --bs-primary: #093862;
   --bs-secondary: #49beff;
   --bs-success: #13deb9;
   --bs-info: #539bff;
@@ -516,6 +516,7 @@ select:disabled {
 [type="reset"],
 [type="submit"],
 button {
+  appearance: button;
   -webkit-appearance: button;
 }
 [type="button"]:not(:disabled),
@@ -567,6 +568,7 @@ legend + * {
 }
 [type="search"] {
   outline-offset: -2px;
+  appearance: textfield;
   -webkit-appearance: textfield;
 }
 ::-webkit-search-decoration {
@@ -581,6 +583,7 @@ legend + * {
 }
 ::file-selector-button {
   font: inherit;
+  appearance: button;
   -webkit-appearance: button;
 }
 output {
@@ -2493,7 +2496,6 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #5a6a85;
-  background-color: transparent;
   background-clip: padding-box;
   border: var(--bs-border-width) solid #dfe5ef;
   -webkit-appearance: none;
@@ -2720,7 +2722,6 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: 1.5;
   color: #5a6a85;
-  background-color: transparent;
   background-image: var(--bs-form-select-bg-img),
     var(--bs-form-select-bg-icon, none);
   background-repeat: no-repeat;
@@ -3459,7 +3460,7 @@ textarea.form-control.is-invalid {
   --bs-btn-font-size: 14;
   --bs-btn-font-weight: 500;
   --bs-btn-line-height: 1.5;
-  --bs-btn-color: #5a6a85;
+  --bs-btn-color: #093862;
   --bs-btn-bg: transparent;
   --bs-btn-border-width: var(--bs-border-width);
   --bs-btn-border-color: transparent;
@@ -3563,8 +3564,8 @@ fieldset:disabled .btn {
 }
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #5d87ff;
-  --bs-btn-border-color: #5d87ff;
+  --bs-btn-bg: #093862;
+  --bs-btn-border-color: #093862;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #4f73d9;
   --bs-btn-hover-border-color: #4a6ccc;
@@ -3574,8 +3575,8 @@ fieldset:disabled .btn {
   --bs-btn-active-border-color: #4665bf;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #5d87ff;
-  --bs-btn-disabled-border-color: #5d87ff;
+  --bs-btn-disabled-bg: #093862;
+  --bs-btn-disabled-border-color: #093862;
 }
 .btn-secondary {
   --bs-btn-color: #fff;
@@ -16479,12 +16480,12 @@ fieldset:disabled .btn {
   height: 100%;
   z-index: 11;
   border-right: 0px solid #fff;
-  background-color: var(--bs-gray-200);
+  background-color: #fff;
 }
 .left-sidebar .scroll-sidebar {
   overflow-y: auto;
-  padding: 0 24px;
-  height: calc(100vh - 190px);
+  padding: 0 24px 80px;
+  height: calc(100vh);
   border-radius: 7px;
 }
 .left-sidebar .scroll-sidebar .simplebar-track.simplebar-horizontal {
@@ -16515,7 +16516,7 @@ fieldset:disabled .btn {
 }
 .sidebar-nav ul .sidebar-item .sidebar-link {
   color: #2a3547;
-  background-color: #fff;
+  background-color: var(--bs-gray-200);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

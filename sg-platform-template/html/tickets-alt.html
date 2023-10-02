@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
 </head>
 
 <body>
@@ -205,66 +206,24 @@
       <!--  Header End -->
       <div class="container-fluid">
         <div class="container-fluid">
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-12">
-                  <h5 class="card-title fw-semibold mb-4">Titles, text, and links</h5>
-                  <div class="card" style="background-color: #eaeff4;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the
-                        card's content.</p>
-                      <a href="#" class="card-link"><span class="badge bg-primary rounded-3 fw-semibold">MAA</span></a>
-                      <a href="#" class="card-link"><span class="badge bg-primary rounded-3 fw-semibold">OAA</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-12">
-                  <h5 class="card-title fw-semibold mb-4">Titles, text, and links</h5>
-                  <div class="card" style="background-color: #eaeff4;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the
-                        card's content.</p>
-                      <a href="#" class="card-link"><span class="badge bg-primary rounded-3 fw-semibold">MAA</span></a>
-                      <a href="#" class="card-link"><span class="badge bg-primary rounded-3 fw-semibold">OAA</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-12">
-                  <h5 class="card-title fw-semibold mb-4">Titles, text, and links</h5>
-                  <div class="card" style="background-color: #eaeff4;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the
-                        card's content.</p>
-                      <a href="#" class="card-link"><span class="badge bg-primary rounded-3 fw-semibold">MAA</span></a>
-                      <a href="#" class="card-link"><span class="badge bg-primary rounded-3 fw-semibold">OAA</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            <table id="myTable" class="display">
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1 Data 1</td>
+                        <td>Row 1 Data 2</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2 Data 1</td>
+                        <td>Row 2 Data 2</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
       </div>
     </div>
@@ -279,6 +238,7 @@
   <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
   <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
   <script src="../assets/js/dashboard.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
 </body>
 
 </html>
