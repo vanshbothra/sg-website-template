@@ -18,6 +18,9 @@
   --main-blue-rgb-015: rgba(0, 118, 189, 0.1);
 }
 
+
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -147,6 +150,21 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 28px;
   }
 }
+
+#invertButton {
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 40%;
+  background: none;
+  border: none;
+}
+
+#icon {
+  width: 30px;
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Timeline Bar
@@ -370,6 +388,8 @@ h1, h2, h3, h4, h5, h6 {
     content: "\ea9d";
   }
 }
+
+
 
 /* Mobile Navigation */
 .mobile-nav-toggle {
@@ -651,6 +671,11 @@ section {
   margin: 15px 0 0 0;
 }
 
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 75%;
+}
+
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
@@ -838,7 +863,7 @@ section {
   position: relative;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  box-shadow: 0 0 29px 0 rgba(155, 59, 59, 0.12);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
@@ -847,7 +872,7 @@ section {
 .services .icon-box::before {
   content: '';
   position: absolute;
-  background: #e1f0fa;
+  background: #fae1e1;
   right: -60px;
   top: -40px;
   width: 100px;
@@ -858,7 +883,7 @@ section {
 }
 
 .services .icon-box:hover::before {
-  background: var(--secondary-color);
+  background: rgba(192,41,55,255);
   right: 0;
   top: 0;
   width: 100%;
@@ -874,14 +899,14 @@ section {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background: var(--secondary-color);
+  background: var(rgba(192,41,55,255));
   transition: all 0.3s ease-in-out;
 }
 
 .services .icon i {
   font-size: 36px;
   line-height: 1;
-  color: #fff;
+  color: rgba(192,41,55,255);
 }
 
 .services .title {
@@ -891,7 +916,7 @@ section {
 }
 
 .services .title a {
-  color: #111;
+  color: rgba(192,41,55,255);
 }
 
 .services .description {
@@ -905,11 +930,11 @@ section {
 }
 
 .services .icon-box:hover .icon {
-  background: #fff;
+  background: #fae1e1;
 }
 
 .services .icon-box:hover .icon i {
-  color: #3498db;
+  color: rgba(192,41,55,255);
 }
 
 /*--------------------------------------------------------------
