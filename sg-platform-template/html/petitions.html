@@ -14,7 +14,30 @@
         rel="stylesheet">
 </head>
 
-
+<style>
+    @media (max-width: 768px) {
+        
+    }
+    /* Media query for screens between 768px and 1024px */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .img-div {
+            padding-right: 0px;
+        }
+        .cont-div {
+            padding-left: 0px;
+        }
+    }
+    
+    /* Media query for screens larger than 1024px */
+    @media (min-width: 1025px) {
+        .img-div {
+            padding-right: 0px;
+        }
+        .cont-div {
+            padding-left: 0px;
+        }
+    }
+</style>
 <body>
     <!--  Body Wrapper -->
     <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
@@ -227,11 +250,11 @@
                     <div class="card col-md-12" >
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-md-3">
-                                    <img width="100%" height="100%" src="https://fastly.picsum.photos/id/1019/200/200.jpg?hmac=KHfXQt_BONEwuWtr85KJ-jStSnVp_GL9FWpJXW_XtKw" alt="" srcset="">
+                                <div class="col-md-4 img-div" >
+                                    <img width="100%" height="100%" src="https://picsum.photos/200" alt="" srcset="">
                                 </div>
-                                <div class="col-md-9" >
-                                    <div class="card" style="background-color: #eaeff4; height: 100%">
+                                <div class="col-md-8 cont-div" >
+                                    <div class="card" style="background-color: #eaeff4; height: 100%;">
                                         <div class="card-body" style="height: fit-content;">
                                             <div>
                                                 

@@ -14,8 +14,13 @@
         rel="stylesheet">
 </head>
 <style>
+    @media (max-width: 768px) {
+        .comment-btn {
+            margin: 10px 0 10px 0;
+        }
+    }
     .petition-details {
-        margin-top: 20px;
+        
         text-align: center;
     }
 
@@ -70,6 +75,13 @@
 
     .comment-text {
         margin-top: 5px;
+    }
+
+    .btn-sign {
+        width: 160px;
+        height: 40px; font-size: 15px; 
+        background-color: transparent; 
+        color: black;
     }
 </style>
 
@@ -281,7 +293,7 @@
             </header>
             <!--  Header End -->
             <div class="container-fluid">
-                <div class="container-fluid" style="padding-top: 40px;">
+                <div class="container-fluid">
                     <div class="card">
                         <div class="card-body">
                             <div class="row">
@@ -299,8 +311,8 @@
                                         libero minus, magni amet molestias nostrum accusamus, eius natus voluptatem, sed
                                         non ducimus. At, corrupti? Possimus temporibus illum quis dolor minus?</p>
                                     <div style="text-align: center;">
-                                        <button type="button" class="btn btn-primary m-1"
-                                            style="width: 160px; height: 40px; font-size: 15px">Sign This
+                                        <button type="button" class="btn btn-primary m-1 btn-sign"
+                                            >Sign This
                                             Petition</button>
                                     </div>
 
@@ -326,13 +338,17 @@
                         </div>
                     </div>
                     <h3>Comments</h3>
-
-                    <form action="">
-                        <input type="text" class="form-control" placeholder="Add a Comment" style="height: 50px;">
-                        <div style="text-align: right;">
-                            <button type="button" class="btn btn-primary" style="margin: 10px 0 10px 0;">Submit</button>
-                        </div>
-                    </form>
+                    <div>
+                        <form action="" class="row">
+                            <div class="col-md-10" >
+                                <textarea name="" id="" cols="10" rows="2" class="form-control">
+                                </textarea>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-primary comment-btn">Comment</button>
+                            </div>
+                        </form>
+                    </div>
                     <!-- <div class="mb-3 col-md-10">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
                             <input type="text" class="form-control" 
