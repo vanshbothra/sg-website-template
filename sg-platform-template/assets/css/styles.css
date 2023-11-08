@@ -5397,6 +5397,7 @@ fieldset:disabled .btn {
   -ms-flex-direction: column;
   flex-direction: column;
   min-width: 0;
+  width: 100%;
   height: var(--bs-card-height);
   word-wrap: break-word;
   background-color: var(--bs-card-bg);
@@ -5555,6 +5556,18 @@ fieldset:disabled .btn {
   .card-group > .card:not(:first-child) .card-footer,
   .card-group > .card:not(:first-child) .card-img-bottom {
     border-bottom-left-radius: 0;
+  }
+}
+@media (min-width: 1010px) {
+  .sg-ticket {
+    width: 48% !important;
+    margin-left: 11px;
+    margin-top: 15px;
+  }
+  .sg-response {
+    width: 80% !important;
+    margin-left: 15px;
+    margin-top: 15px;
   }
 }
 .accordion {
