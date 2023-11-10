@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Modernize Free</title>
   <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
-  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 
 <body>
@@ -43,48 +43,60 @@
             </li>
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">UI COMPONENTS</span>
+              <span class="hide-menu">MY ASHOKA</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
+              <a class="sidebar-link" href="./announcements.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-article"></i>
                 </span>
-                <span class="hide-menu">Buttons</span>
+                <span class="hide-menu">Announcements</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
+              <a class="sidebar-link" href="./my-tickets.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-alert-circle"></i>
                 </span>
-                <span class="hide-menu">Alerts</span>
+                <span class="hide-menu">My Tickets</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-card.html" aria-expanded="false">
+              <a class="sidebar-link" href="./public-forum.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-cards"></i>
                 </span>
-                <span class="hide-menu">Card</span>
+                <span class="hide-menu">Public Forum</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
+              <a class="sidebar-link" href="./calendar.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-file-description"></i>
                 </span>
-                <span class="hide-menu">Forms</span>
+                <span class="hide-menu">Events Calendar</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
+              <a class="sidebar-link" href="./course-review.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-typography"></i>
                 </span>
-                <span class="hide-menu">Typography</span>
+                <span class="hide-menu">Course Review</span>
               </a>
             </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./my-profile.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-typography"></i>
+                </span>
+                <span class="hide-menu">My Profile</span>
+              </a>
+            </li>
+
+            <!--Extras-->
+
+<!--             
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
               <span class="hide-menu">AUTH</span>
@@ -124,9 +136,10 @@
                 </span>
                 <span class="hide-menu">Sample Page</span>
               </a>
-            </li>
+            </li> -->
+
           </ul>
-          <div class="unlimited-access hide-menu bg-light-primary position-relative mb-7 mt-5 rounded">
+          <!-- <div class="unlimited-access hide-menu bg-light-primary position-relative mb-7 mt-5 rounded">
             <div class="d-flex">
               <div class="unlimited-access-title me-3">
                 <h6 class="fw-semibold fs-4 mb-6 text-dark w-85">Upgrade to pro</h6>
@@ -136,7 +149,7 @@
                 <img src="../assets/images/backgrounds/rocket.png" alt="" class="img-fluid">
               </div>
             </div>
-          </div>
+          </div> -->
         </nav>
         <!-- End Sidebar navigation -->
       </div>
@@ -155,18 +168,39 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-icon-hover" href="javascript:void(0)">
-                <i class="ti ti-bell-ringing"></i>
-                <div class="notification bg-primary rounded-circle"></div>
+              <a class="nav-link nav-icon-hover" href="./index.html">
+                <i class="ti ti-arrow-back-up"></i>
               </a>
             </li>
           </ul>
-          <button type="button" style="width: 35; height: 35;" id="darkbtn" class="btn btn-light rounded-circle"
-              onclick="changeTheme()"><i id="drkMdIcon" class="ti ti-moon"></i></button>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
-              
-              <a href="https://adminmart.com/product/modernize-free-bootstrap-admin-dashboard/" target="_blank" class="btn btn-primary">Download Free</a>
+              <!-- <a href="https://adminmart.com/product/modernize-free-bootstrap-admin-dashboard/" target="_blank" class="btn btn-primary">Download Free</a> -->
+              <button type="button" style="width: 35; height: 35;" id="darkbtn" class="btn btn-light"
+                onclick="changeTheme()"><i id="drkMdIcon" class="ti ti-moon"></i></button>
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="ti ti-bell-ringing"></i>
+                  <div class="notification bg-primary rounded-circle"></div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" style="min-width: 310px;"
+                  aria-labelledby="drop2">
+                  <div class="message-body">
+                    <div class="alert alert-primary" style="margin: 0px 10px 10px;" role="alert">
+                      A simple primary alert—check it out!
+                    </div>
+                    <div class="alert alert-primary" style="margin: 0px 10px 10px;" role="alert">
+                      A simple primary alert—check it out!
+                    </div>
+                    <div class="alert alert-primary" style="margin: 0px 10px 10px;" role="alert">
+                      A simple primary alert—check it out!
+                    </div>
+                    <a href="./authentication-login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Clear
+                      All</a>
+                  </div>
+                </div>
+              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                   aria-expanded="false">
