@@ -11,12 +11,12 @@
 <body>
     <div class="overall-rating-container">
         <div class="overall-rating"></div>
-            <div class="rating">4.5</div>
+        <div class="rating">4.5</div>
         <p class="small-text">Overall Rating</p>
     </div>
     <div class="info">
         <h1>Course Name</h1>
-        <h2>Professor Name</h2>
+        <h2><a href="professor-page.html" class="normal-link">Professor Name</a></h2>
         <h3>Semester</h3>
     </div>
     <div class="navbar">
@@ -25,21 +25,16 @@
         </ul>
     </div>
     <div class="reviews-container">
-    <h4 class="reviews-heading">Reviews</h4>
-    <div class="reviews">
+        <h4 class="reviews-heading">Reviews</h4>
+        <div class="reviews"></div>
+        <p class="read-more" onclick="toggleReviews()">Read More</p>
     </div>
-    <p class="read-more" onclick="toggleReviews()">Read More</p>
-</div>
 
-<script>
-    function toggleReviews() {
-        var reviewsContainer = document.querySelector('.reviews');
-        reviewsContainer.style.maxHeight = (reviewsContainer.style.maxHeight === '100px') ? '100%' : '100px';
-    }
-</script>
+    <script>
+        function toggleReviews() {
+            var reviewsContainer = document.querySelector('.reviews');
+            reviewsContainer.style.maxHeight = (reviewsContainer.style.maxHeight === '100px') ? '100%' : '100px';
+        }
+    </script>
 </body>
 </html>
-
-
-
- 
