@@ -47,7 +47,7 @@ body {
     font-size: 40px;
 }
 
-.reviews-container {
+.courses-container {
     width: 90%;
     height: 450px;
     margin-top: 20px;
@@ -57,10 +57,16 @@ body {
     translate: 120px 200px;
 }
 
-.reviews-container p {
+.courses-container h4 {
+    position: fixed; /* You can use 'absolute' instead of 'fixed' based on your layout requirements */
+    top: 0;
+    left: 20px;
+}
+
+.courses-container p{
     position: fixed; /* You can use 'absolute' instead of 'fixed' based on your layout requirements */
     bottom: 0;
-    left: 20px;
+    left: 20px;   
 }
 
 .navbar {
