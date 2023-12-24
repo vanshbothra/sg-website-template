@@ -1813,3 +1813,7 @@ section {
 #footer .footer-links a:hover {
   color: #3498db;
 }
+
+.col-lg-7>p{
+  text-align: center;
+}
